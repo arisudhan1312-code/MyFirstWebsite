@@ -1,0 +1,79 @@
+
+03_Media_Elements.html
+100%
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Media Elements</title>
+    <style>
+      body {
+        font: 16px Arial;
+        max-width: 800px;
+        margin: 40px auto;
+        line-height: 1.6;
+      }
+      h1 {
+        color: #2563eb;
+      }
+      .media {
+        background: #f8fafc;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      audio,
+      video {
+        max-width: 100%;
+      }
+      pre {
+        background: #111827;
+        color: white;
+        padding: 15px;
+        overflow: auto;
+      }
+      .ex {
+        background: #ecfdf5;
+        padding: 15px;
+        border-left: 5px solid #16a34a;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML5: Media Elements</h1>
+    <p>HTML5 provides built-in audio and video elements.</p>
+    <h2>Audio</h2>
+    <pre>
+&lt;audio controls&gt;
+  &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;</pre
+    >
+    <div class="media">
+      <audio controls>
+        <source
+          src="https://www.w3schools.com/html/horse.mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+    </div>
+    <h2>Video</h2>
+    <pre>
+&lt;video controls width="500"&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+&lt;/video&gt;</pre
+    >
+    <div class="media">
+      <video controls width="500">
+        <source
+          src="https://www.w3schools.com/html/mov_bbb.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+    <p><b>Useful attributes:</b> controls, autoplay, muted, loop, poster.</p>
+    <div class="ex">
+      <b>Exercise:</b> Create a "Cybersecurity Awareness" page with one audio
+      clip and one video. Try controls, muted and loop.
+    </div>
+  </body>
+</html>
+Displaying 03_Media_Elements.html.

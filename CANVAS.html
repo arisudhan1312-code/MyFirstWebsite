@@ -1,0 +1,69 @@
+
+04_Canvas.html
+100%
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Canvas</title>
+    <style>
+      body {
+        font: 16px Arial;
+        max-width: 800px;
+        margin: 40px auto;
+        line-height: 1.6;
+      }
+      h1 {
+        color: #2563eb;
+      }
+      canvas {
+        border: 2px solid #2563eb;
+        max-width: 100%;
+      }
+      pre {
+        background: #111827;
+        color: white;
+        padding: 15px;
+        overflow: auto;
+      }
+      .ex {
+        background: #ecfdf5;
+        padding: 15px;
+        border-left: 5px solid #16a34a;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML5: Canvas</h1>
+    <p>Canvas provides an area where JavaScript can draw graphics.</p>
+    <pre>
+&lt;canvas id="c" width="500" height="250"&gt;&lt;/canvas&gt;
+&lt;script&gt;
+const ctx=document.getElementById("c").getContext("2d");
+ctx.fillRect(50,50,120,80);
+&lt;/script&gt;</pre
+    >
+    <canvas id="c" width="500" height="250"></canvas>
+    <script>
+      const x = document.getElementById("c").getContext("2d");
+      x.fillStyle = "#2563eb";
+      x.fillRect(40, 40, 130, 80);
+      x.beginPath();
+      x.arc(280, 100, 50, 0, Math.PI * 2);
+      x.fillStyle = "#16a34a";
+      x.fill();
+      x.beginPath();
+      x.moveTo(360, 180);
+      x.lineTo(450, 60);
+      x.lineTo(480, 180);
+      x.closePath();
+      x.fillStyle = "#f59e0b";
+      x.fill();
+    </script>
+    <div class="ex">
+      <b>Exercise:</b> Draw a rectangle, circle and triangle on a canvas. Change
+      their size and position.
+    </div>
+  </body>
+</html>
+Displaying 04_Canvas.html.
